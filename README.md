@@ -7,15 +7,21 @@ Circle, Target, Triangle, Square
    
 <div style="display: flex; gap: 10px;">
     <img src="https://github.com/user-attachments/assets/85ac43da-ea59-4664-a8b5-caafce8e582a" width="300" height="300" alt="Hotspot 1 -01"/>
-    <img src="https://github.com/user-attachments/assets/bc58de67-4782-431e-9ca5-99e7154b96e4" width="300" height="300" alt="Target-02-01"/>
+    <img src="https://github.com/user-attachments/assets/4d24b317-bdb7-4923-97bd-ef2647719b62" width="300" height="300" alt="Target-02-01"/>
     <img src="https://github.com/user-attachments/assets/a5d0c854-4ad9-4a4c-a5bc-b874d5da1604" width="300" height="300" alt="Shape Detection-02-01"/>
 </div>
 
+## Features :
+* Runs completely on on-board computer of UAV
+* Yolo-V4 Tiny model is optimised to give 20 fps on used hardware.
+* On detecting objects of interest, the model automatically saves the snapshot of the frame in local directory along with time stamp and GPS coordiantes.
+* Provides full control over Traversal of the drone both Manually (using keyboard) and Autonomously.
+
 ## Recommended Hardware :
-1. Raspberry Pi 4
-2. Waveshare OV5640 USB Camera
-3. Pixhawk 2.4.8
-4. GPS Module
+* Raspberry Pi 5
+* Waveshare OV5640 USB Camera
+* Pixhawk 2.4.8
+* GPS Module
 
 ## Prerequisites :
 Git clone the repository into a folder
@@ -28,7 +34,7 @@ Navigate to this folder in a new terminal
   cd Aerothon-24
   ```
   
-It is recommended that you create a python virtual environment and install the required libraries using the requirements file
+**It is recommended that you create a python virtual environment and install the required libraries using the requirements file**
 * ```sh
   pip install -r requirements.txt
   ```
@@ -54,19 +60,22 @@ Running this file will arm the UAV, take off to an altitude of 15 meters, and na
   ```
 
 ### Detection Only :
-Running this file will start YoloV4-Tiny detection on /dev/ttmACM0 port.
+Running this file will start YoloV4-Tiny detection on /dev/ttmACM0 port. You can also enter custom Connection String in Drone class.
 * ```sh
   python only_detection.py
   ```
 
-### Pulse.py :
+### Detection and Traversal Both :
 Running this file will arm the UAV and take off to an altitude of 15 meters, hold position for 5 seconds, and then execute an RTL (Return to Launch) command to land.
 * ```sh
-  python pulse.py
+  python detection_traversal.py
   ```
 
-### Pulse.py :
-Running this file will arm the UAV and take off to an altitude of 15 meters, hold position for 5 seconds, and then execute an RTL (Return to Launch) command to land.
+### Navigation using Keyboard :
+Running this file will arm the UAV and take off to an altitude of 15 meters, hold position for 5 seconds, and then use commands from keyboard to run traverse.
+Up arrow key moves it forward and so on. All commands are executed for duration of 1 second.
 * ```sh
-  python pulse.py
+  python keyboard.py
   ```
+
+Made with ❤️ by [Ayush](https://github.com/ayushsaksena30), [Shashank](), [Sumit](), [Siddharth]()
