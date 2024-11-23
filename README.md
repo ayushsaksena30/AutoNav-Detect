@@ -6,9 +6,9 @@ It detects the following shapes:
 Circle, Target, Triangle, Square
    
 <div style="display: flex; gap: 10px;">
-    <img src="https://github.com/user-attachments/assets/85ac43da-ea59-4664-a8b5-caafce8e582a" width="300" height="300" alt="Hotspot 1 -01"/>
-    <img src="https://github.com/user-attachments/assets/4d24b317-bdb7-4923-97bd-ef2647719b62" width="300" height="300" alt="Target-02-01"/>
-    <img src="https://github.com/user-attachments/assets/a5d0c854-4ad9-4a4c-a5bc-b874d5da1604" width="300" height="300" alt="Shape Detection-02-01"/>
+    <img src="https://github.com/user-attachments/assets/85ac43da-ea59-4664-a8b5-caafce8e582a" width="200" height="200" alt="Hotspot 1 -01"/>
+    <img src="https://github.com/user-attachments/assets/4d24b317-bdb7-4923-97bd-ef2647719b62" width="200" height="200" alt="Target-02-01"/>
+    <img src="https://github.com/user-attachments/assets/a5d0c854-4ad9-4a4c-a5bc-b874d5da1604" width="200" height="200" alt="Shape Detection-02-01"/>
 </div>
 
 ## Features :
